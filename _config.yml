@@ -21,19 +21,16 @@
 title: Jose Fernandez
 email: me@jrfernandez.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I’m a software engineer specializing in observability, performance, and reliability, currently working at Netflix on the Compute team. I have a deep passion for systems and low-level languages, with a current focus on Rust and eBPF technology.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jfernandez.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jrfernandez
-github_username:  jfernandez
+github_username: jfernandez
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
