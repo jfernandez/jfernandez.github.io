@@ -7,6 +7,10 @@ permalink: /packaging-rust-program-for-fedora
 ---
 Packaging a Rust program for Fedora may seem daunting initially, but it's more straightforward than expected, thanks to excellent documentation, Rust-specific tooling, and a helpful community. Over the past two months, I packaged [bpftop](/bpftop/), a process monitor for eBPF programs. While there were some specific considerations with Rust, the process was manageable. In this post, I'll share the steps I took, the insights I gained, and how to streamline the experience.
 
+### Why Package for Fedora?
+
+Fedora is the upstream for Red Hat Enterprise Linux (RHEL), meaning any software packaged for Fedora has a direct path into the enterprise space. By packaging for Fedora, you're not only contributing to one of the most cutting-edge Linux distributions but also laying the groundwork for broader adoption across many industries that rely on RHEL.
+
 ### Becoming a Fedora Packager: Upfront Expectations
 
 Before diving into the packaging process, it's essential to understand that to publish a package in Fedora, you must first become an official Fedora packager, which is not guaranteed. A good starting point is to follow the [Fedora guide](https://docs.fedoraproject.org/en-US/package-maintainers/Joining_the_Package_Maintainers/) on joining the package maintainers, which outlines the basic steps you must take. Review this guide to familiarize yourself with the official process.
