@@ -118,7 +118,7 @@ I found the Fedora packaging process more streamlined than I initially assumed. 
 
 - [Pagure](https://pagure.io/): Fedora uses a Git-based source control system to manage source code and track issues. It's where you will create and manage your packaging repositories.
 
-- [Koji](https://koji.fedoraproject.org/koji/): Fedora's build system is responsible for building packages from the source. It ensures that your packages meet Fedora's guidelines and are ready for distribution. Learn more about Koji.
+- [Koji](https://koji.fedoraproject.org/koji/): Fedora's build system is responsible for building packages from the source. It ensures that your packages meet Fedora's guidelines and are ready for distribution.
 
 - [Bodhi](https://bodhi.fedoraproject.org/): A tool for managing package updates. Once your package is built and tested, Bodhi helps move it from testing to stable repositories.
 
