@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introducing mdserve: Fast Markdown Preview for Terminal Workflows"
-date:   2024-09-22 21:00:00 -0600
+date:   2025-09-22 21:00:00 -0600
 categories: rust markdown tools
 permalink: /mdserve-fast-markdown-preview-terminal-workflows/
 ---
