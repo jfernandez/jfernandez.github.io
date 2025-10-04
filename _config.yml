@@ -30,6 +30,7 @@ github_username: jfernandez
 # Build settings
 theme: minima
 future: true
+timezone: America/Denver
 plugins:
   - jekyll-feed
 # Exclude from processing.
