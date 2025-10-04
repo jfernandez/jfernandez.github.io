@@ -35,13 +35,17 @@ With AI assistants becoming more common, we spend more time with documentation a
 
 **macOS:**
 ```bash
-brew tap jfernandez/mdserve
 brew install mdserve
 ```
 
 **Linux:**
 ```bash
 curl -sSfL https://raw.githubusercontent.com/jfernandez/mdserve/main/install.sh | bash
+```
+
+**Cargo:**
+```bash
+cargo install mdserve
 ```
 
 ## Usage
