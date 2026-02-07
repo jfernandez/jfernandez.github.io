@@ -1,10 +1,9 @@
 ---
-layout: page
-title: Linux kernel
-permalink: /linux-kernel/
+title: "Linux kernel"
+url: /linux-kernel/
 ---
 
-I started contributing to the Linux kernel in 2024. My primary focus is in the 
+I started contributing to the Linux kernel in 2024. My primary focus is in the
 eBPF subsystem. I have submitted to the following patches:
 
 * [bpf: Improve program stats run-time calculation](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=ce09cbdd988887662546a1175bcfdfc6c8fdd150)

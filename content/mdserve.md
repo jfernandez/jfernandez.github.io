@@ -1,7 +1,6 @@
 ---
-layout: page
-title: mdserve
-permalink: /mdserve/
+title: "mdserve"
+url: /mdserve/
 ---
 
 [mdserve](https://github.com/jfernandez/mdserve) is a fast, lightweight markdown preview server I created for terminal-based workflows.

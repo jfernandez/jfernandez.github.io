@@ -1,7 +1,6 @@
 ---
-layout: page
-title: bpftop
-permalink: /bpftop/
+title: "bpftop"
+url: /bpftop/
 ---
 
 [bpftop](https://github.com/Netflix/bpftop) is a monitoring tool I created to provide real-time insights into the performance of eBPF programs.

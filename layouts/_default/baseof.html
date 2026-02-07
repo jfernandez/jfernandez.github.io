@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ site.LanguageCode | default "en" }}">
 
-  {%- include head.html -%}
+  {{- partial "head.html" . -}}
 
   <body>
-    {% include GoogleTagManager_body.liquid %}
-    {%- include header.html -%}
+    {{- partial "gtm-body.html" . -}}
+    {{- partial "header.html" . -}}
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        {{ content }}
+        {{- block "main" . }}{{ end -}}
       </div>
     </main>
 
-    {%- include footer.html -%}
+    {{- partial "footer.html" . -}}
 
     <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" aria-label="Back to top"></button>

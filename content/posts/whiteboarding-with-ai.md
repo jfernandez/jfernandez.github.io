@@ -1,9 +1,8 @@
 ---
-layout: post
-title:  "Whiteboarding with AI"
-date:   2025-10-04 21:00:00 -0600
-categories: ai workflow productivity
-permalink: /whiteboarding-with-ai/
+title: "Whiteboarding with AI"
+date: 2025-10-04T21:00:00-06:00
+categories: ["ai", "workflow", "productivity"]
+url: /whiteboarding-with-ai/
 ---
 
 Coding agents often produce better results when you don't ask them to write code immediately. If you jump straight to execution without thinking through the design, the code quality suffers. I've found it better to whiteboard the problem first. It's like pairing with a senior engineer. You enter a room, map out the problem space, explore solutions, and sketch architectural diagrams. Instead of a whiteboard, it's Markdown. And instead of losing the work when you erase it, the session persists as a design document.
@@ -29,7 +28,7 @@ graph LR
 
 Renders as:
 
-![Whiteboarding workflow diagram](/assets/images/whiteboarding-workflow-diagram.png)
+![Whiteboarding workflow diagram](/images/whiteboarding-workflow-diagram.png)
 
 For visual processors who need diagrams to understand complex systems, this is transformative. Instead of sketching on a whiteboard and losing the work, you get structured diagrams that live alongside your documentation. The diagrams update in seconds as you refine ideas with AI.
 

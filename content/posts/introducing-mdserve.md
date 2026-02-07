@@ -1,9 +1,8 @@
 ---
-layout: post
-title:  "Introducing mdserve: Fast Markdown Preview for Terminal Workflows"
-date:   2025-09-22 21:00:00 -0600
-categories: rust markdown tools
-permalink: /mdserve-fast-markdown-preview-terminal-workflows/
+title: "Introducing mdserve: Fast Markdown Preview for Terminal Workflows"
+date: 2025-09-22T21:00:00-06:00
+categories: ["rust", "markdown", "tools"]
+url: /mdserve-fast-markdown-preview-terminal-workflows/
 ---
 
 As coding LLM agents get better, I find myself using IDEs less and less. These days, my workflow is mostly [Claude Code](https://claude.ai/code) and Neovim. I don't think I need a full IDE anymore for most work.
@@ -18,7 +17,7 @@ Most markdown preview tools are designed as IDE plugins or require dependencies 
 
 I built [mdserve](https://github.com/jfernandez/mdserve) - a fast, lightweight markdown preview server for terminal-based workflows.
 
-![mdserve terminal output](/assets/images/mdserve-terminal-output.png)
+![mdserve terminal output](/images/mdserve-terminal-output.png)
 
 ### Key Features
 
@@ -58,7 +57,7 @@ mdserve README.md
 
 The server starts up and provides a local URL to view your rendered markdown. Use the 🎨 button to switch between themes, including the beautiful Catppuccin variants that match your terminal aesthetic.
 
-![mdserve theme picker](/assets/images/mdserve-theme-picker.png)
+![mdserve theme picker](/images/mdserve-theme-picker.png)
 
 ## The Future of Development Tools
 

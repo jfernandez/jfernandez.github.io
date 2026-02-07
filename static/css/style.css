@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Custom Catppuccin Macchiato Theme for Jekyll Blog
+   Custom Catppuccin Macchiato Theme
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
@@ -64,6 +64,7 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -152,10 +153,24 @@ a:visited {
 .site-header {
   background-color: var(--ctp-crust);
   border-bottom: 1px solid var(--ctp-surface0);
+  padding: 0.5rem 0;
+}
+
+.site-header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .site-title {
-  color: var(--ctp-text) !important; /* Override theme default */
+  color: var(--ctp-text) !important;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-title:visited {
+  color: var(--ctp-text) !important;
 }
 
 .site-nav .page-link {
@@ -164,6 +179,7 @@ a:visited {
   padding: 0.25rem 0.5rem;
   border-radius: var(--ctp-border-radius-sm);
   position: relative;
+  margin-left: 0.5rem;
 }
 
 .site-nav .page-link:hover {
@@ -198,45 +214,6 @@ a:visited {
    ========================================================================== */
 
 .site-footer {
-  display: none;
-}
-
-.footer-heading {
-  display: none;
-}
-
-.footer-col {
-  color: var(--ctp-subtext0);
-}
-
-.footer-col-1 .contact-list li {
-  margin-bottom: 0.5rem;
-  color: var(--ctp-text);
-}
-
-.footer-col-1 .u-email {
-  color: var(--ctp-sapphire);
-  transition: color 0.2s ease;
-}
-
-.footer-col-1 .u-email:hover {
-  color: var(--ctp-blue);
-}
-
-.footer-col-2 .social-media-list a {
-  color: var(--ctp-subtext1);
-  transition: all 0.2s ease;
-  padding: 0.25rem;
-  border-radius: var(--ctp-border-radius-sm);
-}
-
-.footer-col-2 .social-media-list a:hover {
-  color: var(--ctp-lavender);
-  background-color: var(--ctp-surface0);
-  transform: translateY(-1px);
-}
-
-.footer-col-3 p {
   display: none;
 }
 
@@ -275,8 +252,20 @@ a:visited {
   50% { background-position: 100% 50%; }
 }
 
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .post-list > li {
   border-bottom: 1px solid var(--ctp-surface0);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.post-list h3 {
+  margin-top: 0.25em;
 }
 
 /* Emphasis elements */
@@ -337,13 +326,13 @@ code {
   padding: var(--ctp-spacing-xs) 0.4em;
   border-radius: var(--ctp-border-radius-sm);
   font-family: var(--ctp-font-mono);
-  border: none; /* Override theme default */
+  border: none;
 }
 
 /* Basic pre blocks */
 pre {
   background-color: var(--ctp-mantle);
-  border: none; /* Override theme default */
+  border: none;
   border-radius: var(--ctp-border-radius);
   padding: var(--ctp-spacing-md);
   overflow-x: auto;
@@ -355,15 +344,13 @@ pre code {
   border: none;
 }
 
-/* Syntax highlighted code blocks - consolidated rules */
-.highlight,
-.highlighter-rouge .highlight,
-div.language-plaintext.highlighter-rouge div.highlight {
-  background-color: var(--ctp-mantle) !important; /* Override theme's white background */
+/* Syntax highlighted code blocks */
+.highlight {
+  background-color: var(--ctp-mantle) !important;
   color: var(--ctp-text);
   border-radius: var(--ctp-border-radius);
   padding: var(--ctp-spacing-md);
-  border: none !important; /* Override theme borders */
+  border: none !important;
 }
 
 .highlight pre,
@@ -375,7 +362,7 @@ div.language-plaintext.highlighter-rouge div.highlight {
   color: var(--ctp-text);
 }
 
-/* Syntax highlighting token colors - simplified for better readability */
+/* Syntax highlighting token colors */
 .highlight * {
   color: var(--ctp-text) !important;
 }
@@ -399,10 +386,9 @@ div[style*="border: 1px solid #ccc"] {
 
 /* ==========================================================================
    Utility Overrides
-   These rules override theme defaults with minimal specificity impact
    ========================================================================== */
 
-/* Remove all borders from code elements - theme override */
+/* Remove all borders from code elements */
 pre, code, .highlight pre, .highlight code {
   border: none !important;
 }
@@ -412,47 +398,36 @@ pre, code, .highlight pre, .highlight code {
   color: inherit;
 }
 
-/* Enhanced RSS subscribe button */
-.rss-subscribe a[href="/feed.xml"],
-a[href="/feed.xml"] {
-  display: inline-block !important;
-  background: linear-gradient(135deg, var(--ctp-blue), var(--ctp-sapphire)) !important;
+/* Images */
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--ctp-border-radius);
+}
+
+/* RSS button */
+.rss-subscribe a {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--ctp-blue), var(--ctp-sapphire));
   color: var(--ctp-base) !important;
-  padding: 0.5rem 1rem !important;
-  border-radius: var(--ctp-border-radius) !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.5px !important;
-  font-size: 0.85rem !important;
-  box-shadow: 0 2px 8px rgba(138, 173, 244, 0.3) !important;
-  transition: all 0.2s ease !important;
-  border: none !important;
-  background-size: auto !important; /* Override animated underline */
-  text-decoration: none !important;
+  padding: 0.5rem 1rem;
+  border-radius: var(--ctp-border-radius);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 8px rgba(138, 173, 244, 0.3);
+  transition: all 0.2s ease;
 }
 
-/* Hide the "subscribe" text and replace link text with just "RSS" */
-.rss-subscribe {
-  font-size: 0 !important;
+.rss-subscribe a:hover {
+  background: linear-gradient(135deg, var(--ctp-sapphire), var(--ctp-blue));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(138, 173, 244, 0.4);
+  color: var(--ctp-base) !important;
 }
 
-.rss-subscribe a[href="/feed.xml"] {
-  font-size: 0 !important;
-  line-height: 0 !important;
-}
-
-.rss-subscribe a[href="/feed.xml"]:before {
-  content: "RSS" !important;
-  font-size: 0.85rem !important;
-  line-height: normal !important;
-  display: inline-block !important;
-}
-
-.rss-subscribe a[href="/feed.xml"]:hover,
-a[href="/feed.xml"]:hover {
-  background: linear-gradient(135deg, var(--ctp-sapphire), var(--ctp-blue)) !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 4px 16px rgba(138, 173, 244, 0.4) !important;
+.rss-subscribe a:visited {
   color: var(--ctp-base) !important;
 }
 

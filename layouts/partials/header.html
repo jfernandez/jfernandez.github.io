@@ -1,0 +1,11 @@
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="{{ "/" | absURL }}">{{ site.Title }}</a>
+
+    <nav class="site-nav">
+      {{- range site.Menus.main }}
+      <a class="page-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+      {{- end }}
+    </nav>
+  </div>
+</header>

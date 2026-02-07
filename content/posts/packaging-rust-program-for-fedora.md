@@ -1,9 +1,8 @@
 ---
-layout: post
-title:  "Packaging a Rust Program for Fedora"
-date:   2024-08-25 00:49:31 -0600
-categories: fedora rust
-permalink: /packaging-rust-program-for-fedora
+title: "Packaging a Rust Program for Fedora"
+date: 2024-08-25T00:49:31-06:00
+categories: ["fedora", "rust"]
+url: /packaging-rust-program-for-fedora
 ---
 Packaging a Rust program for Fedora may seem daunting initially, but it's more straightforward than expected, thanks to excellent documentation, Rust-specific tooling, and a helpful community. Over the past two months, I packaged [bpftop](/bpftop/), a process monitor for eBPF programs. While there were some specific considerations with Rust, the process was manageable. In this post, I'll share the steps I took, the insights I gained, and how to streamline the experience.
 
@@ -129,8 +128,7 @@ I found the Fedora packaging process more streamlined than I initially assumed. 
 These services, when used together, make the Fedora packaging process much more approachable. I hope this guide makes your experience smoother and easier to navigate!
 
 <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px; margin-top: 20px;">
-  <em><strong>Note:</strong> This blog is kept in source control. If you find any issues with the content, please open an issue 
+  <em><strong>Note:</strong> This blog is kept in source control. If you find any issues with the content, please open an issue
   <a href="https://github.com/jfernandez/jfernandez.github.io/issues" target="_blank">here</a> or submit <a href="https://github.com/jfernandez/jfernandez.github.io/pulls" target="_blank">PR</a>.</em>
 
 </div>
-

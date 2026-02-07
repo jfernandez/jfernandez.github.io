@@ -1,0 +1,40 @@
+baseURL = "https://jrfernandez.com/"
+languageCode = "en-us"
+title = "Jose Fernandez"
+timezone = "America/Denver"
+
+[params]
+  description = "I'm a software engineer specializing in observability, performance, and reliability, currently working at Netflix on the Compute team. I have a deep passion for systems and low-level languages, with a current focus on Rust and eBPF technology."
+  email = "me@jrfernandez.com"
+  github = "jfernandez"
+  twitter = "jrfernandez"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+  [[menu.main]]
+    name = "bpftop"
+    url = "/bpftop/"
+    weight = 2
+  [[menu.main]]
+    name = "mdserve"
+    url = "/mdserve/"
+    weight = 3
+  [[menu.main]]
+    name = "Linux kernel"
+    url = "/linux-kernel/"
+    weight = 4
+
+[markup.highlight]
+  noClasses = false
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[build]
+  buildFuture = true
