@@ -331,13 +331,14 @@ em, strong {
 
 /* Post header styling on single pages */
 .post-header {
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
   margin-bottom: 2rem;
   border-bottom: 2px solid transparent;
   border-image: linear-gradient(to right, var(--ctp-blue), var(--ctp-mauve), transparent) 1;
 }
 
 .post-header .post-title {
+  margin-top: 0;
   background: linear-gradient(135deg, var(--ctp-text), var(--ctp-lavender));
   background-clip: text;
   -webkit-background-clip: text;
@@ -617,5 +618,100 @@ pre {
 }
 
 .back-to-top:before {
-  content: "↑";
+  content: "\2191";
+}
+
+/* ==========================================================================
+   Mobile Hamburger Menu
+   ========================================================================== */
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .site-header .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .site-header .site-title {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .nav-toggle-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    order: 1;
+  }
+
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    display: block;
+    width: 1.25rem;
+    height: 2px;
+    background-color: var(--ctp-subtext1);
+    border-radius: 1px;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+  }
+
+  .nav-toggle-label span::before {
+    top: -6px;
+  }
+
+  .nav-toggle-label span::after {
+    top: 6px;
+  }
+
+  /* Animate to X when open */
+  .nav-toggle:checked ~ .nav-toggle-label span {
+    background-color: transparent;
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label span::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  .site-nav {
+    display: none;
+    width: 100%;
+    order: 2;
+    padding: 0.5rem 0;
+  }
+
+  .nav-toggle:checked ~ .site-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-nav .page-link {
+    margin-left: 0;
+    padding: 0.5rem;
+  }
 }
