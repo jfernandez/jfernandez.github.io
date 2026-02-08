@@ -26,7 +26,7 @@ The core feature set has been stable since 0.5.1. What makes this 1.0 is clarity
 ### The `--open` Flag
 
 ```bash
-mdserve --open plan.md &
+mdserve --open plan.md
 ```
 
 Launches your default browser automatically when the server starts. Agents can now start mdserve, open the browser, and continue working, all without you touching anything.
