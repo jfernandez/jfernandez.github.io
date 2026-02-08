@@ -55,6 +55,10 @@
    Base Elements
    ========================================================================== */
 
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.7;
@@ -191,6 +195,14 @@ a:visited {
   font-size: 1.5rem;
   font-weight: 700;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.site-avatar {
+  border-radius: 50%;
+  display: block;
 }
 
 .site-title:visited {
