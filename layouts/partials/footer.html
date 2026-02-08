@@ -1,2 +1,11 @@
-<footer class="site-footer h-card">
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-content">
+      <a href="https://github.com/{{ site.Params.github }}" class="footer-link">GitHub</a>
+      <span class="footer-sep">&middot;</span>
+      <a href="{{ "index.xml" | absURL }}" class="footer-link">RSS</a>
+      <span class="footer-sep">&middot;</span>
+      <span class="footer-copy">&copy; {{ now.Year }} {{ site.Title }}</span>
+    </div>
+  </div>
 </footer>

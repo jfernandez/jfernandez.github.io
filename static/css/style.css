@@ -76,6 +76,19 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.025em;
 }
 
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: var(--ctp-subtext1);
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
 /* Better paragraph spacing and readability */
 p {
   margin-bottom: 1.2em;
@@ -152,8 +165,19 @@ a:visited {
 
 .site-header {
   background-color: var(--ctp-crust);
-  border-bottom: 1px solid var(--ctp-surface0);
+  border-bottom: none;
   padding: 0.5rem 0;
+  position: relative;
+}
+
+.site-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, var(--ctp-surface2), var(--ctp-overlay0), var(--ctp-surface2));
 }
 
 .site-header .wrapper {
@@ -214,7 +238,39 @@ a:visited {
    ========================================================================== */
 
 .site-footer {
-  display: none;
+  border-top: 1px solid var(--ctp-surface0);
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  color: var(--ctp-overlay1);
+  font-size: 0.85rem;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: var(--ctp-overlay2) !important;
+}
+
+.footer-link:hover {
+  color: var(--ctp-blue) !important;
+}
+
+.footer-link:visited {
+  color: var(--ctp-overlay2) !important;
+}
+
+.footer-sep {
+  color: var(--ctp-surface2);
+}
+
+.footer-copy {
+  color: var(--ctp-overlay0);
 }
 
 /* ==========================================================================
@@ -259,9 +315,9 @@ a:visited {
 }
 
 .post-list > li {
-  border-bottom: 1px solid var(--ctp-surface0);
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
+  border-bottom: none;
+  padding: 1rem 0;
+  margin-bottom: 0.5rem;
 }
 
 .post-list h3 {
@@ -273,9 +329,39 @@ em, strong {
   color: var(--ctp-text);
 }
 
+/* Post header styling on single pages */
+.post-header {
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, var(--ctp-blue), var(--ctp-mauve), transparent) 1;
+}
+
+.post-header .post-title {
+  background: linear-gradient(135deg, var(--ctp-text), var(--ctp-lavender));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Post tags */
+.post-tag {
+  display: inline-block;
+  background-color: var(--ctp-surface0);
+  color: var(--ctp-subtext0);
+  padding: 0.15em 0.6em;
+  border-radius: 1em;
+  font-size: 0.75rem;
+  text-transform: lowercase;
+  letter-spacing: normal;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
 /* Reduce spacing between header and main content */
 .page-content {
   padding-top: var(--ctp-spacing-sm);
+  animation: fadeIn 0.4s ease-out;
 }
 
 /* ==========================================================================
@@ -462,6 +548,32 @@ pre::-webkit-scrollbar-thumb:hover {
 pre {
   scrollbar-width: thin;
   scrollbar-color: var(--ctp-overlay0) var(--ctp-surface0);
+}
+
+/* ==========================================================================
+   Homepage Hero
+   ========================================================================== */
+
+.hero {
+  padding: 2rem 0 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-tagline {
+  color: var(--ctp-subtext0);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 38rem;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Page Fade-in
+   ========================================================================== */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* ==========================================================================

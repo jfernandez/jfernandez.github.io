@@ -1,5 +1,9 @@
 {{ define "main" }}
 <div class="home">
+  <section class="hero">
+    <p class="hero-tagline">{{ site.Params.description }}</p>
+  </section>
+
   <h2 class="post-list-heading">Posts</h2>
   <ul class="post-list">
     {{- range where site.RegularPages "Section" "posts" -}}

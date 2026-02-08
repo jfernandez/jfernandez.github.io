@@ -4,7 +4,7 @@ title = "Jose Fernandez"
 timezone = "America/Denver"
 
 [params]
-  description = "I'm a software engineer specializing in observability, performance, and reliability, currently working at Netflix on the Compute team. I have a deep passion for systems and low-level languages, with a current focus on Rust and eBPF technology."
+  description = "Systems engineer building compute infrastructure and container runtimes. I contribute to the Linux kernel, created bpftop, and work deep in the stack with eBPF and Rust."
   email = "me@jrfernandez.com"
   github = "jfernandez"
   twitter = "jrfernandez"
