@@ -1,6 +1,7 @@
 ---
 title: "Introducing mdserve: Fast Markdown Preview for Terminal Workflows"
 date: 2025-09-22T21:00:00-06:00
+description: "A fast, zero-dependency markdown preview server built in Rust with live reload and Catppuccin themes, designed for terminal-first AI coding workflows."
 categories: ["rust", "markdown", "tools"]
 url: /mdserve-fast-markdown-preview-terminal-workflows/
 ---

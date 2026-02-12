@@ -4,7 +4,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+  {{- $description := site.Params.description -}}
+  {{- if .Description -}}
+    {{- $description = .Description -}}
+  {{- else if not .IsHome -}}
+    {{- $description = .Summary | plainify | truncate 200 -}}
+  {{- end -}}
+  <meta name="description" content="{{ $description }}">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ $description }}">
+  <meta property="og:type" content="{{ cond .IsPage "article" "website" }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ site.Title }}">
+  {{- if .IsPage }}
+  <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">
+  {{- range .Params.categories }}
+  <meta property="article:tag" content="{{ . }}">
+  {{- end }}
+  {{- end }}
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ $description }}">
+  {{- with site.Params.twitter }}
+  <meta name="twitter:site" content="@{{ . }}">
+  {{- end }}
+  <link rel="canonical" href="{{ .Permalink }}">
   <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
   {{- range .AlternativeOutputFormats -}}
   {{ printf `<link rel="%s" type="%s" title="%s" href="%s" />` .Rel .MediaType.Type $.Site.Title .Permalink | safeHTML }}

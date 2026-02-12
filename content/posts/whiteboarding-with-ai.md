@@ -1,6 +1,7 @@
 ---
 title: "Whiteboarding with AI"
 date: 2025-10-04T21:00:00-06:00
+description: "Coding agents produce better results when you plan in markdown first. Whiteboard the problem, sketch Mermaid diagrams, then hand the plan to a coding model for execution."
 categories: ["ai", "workflow", "productivity"]
 url: /whiteboarding-with-ai/
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Noisy Neighbor Detection with eBPF"
 date: 2024-09-11T00:49:31-06:00
+description: "How we continuously monitor the Linux scheduler at Netflix using eBPF to detect CPU resource contention and noisy neighbor issues with minimal overhead."
 categories: ["ebpf", "scheduler"]
 url: /noisy-neighbor-detection-with-ebpf
 ---

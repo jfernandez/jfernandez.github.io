@@ -36,5 +36,7 @@ timezone = "America/Denver"
 [outputs]
   home = ["HTML", "RSS"]
 
+enableRobotsTXT = true
+
 [build]
   buildFuture = true

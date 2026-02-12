@@ -1,6 +1,7 @@
 ---
 title: "mdserve 1.0: Markdown Preview for Coding Agents"
 date: 2026-02-07T12:00:00-07:00
+description: "mdserve is a markdown preview server for terminal coding agents. It renders plans, docs, and Mermaid diagrams in your browser while the agent keeps working."
 categories: ["rust", "ai", "tools"]
 url: /mdserve-1.0/
 ---

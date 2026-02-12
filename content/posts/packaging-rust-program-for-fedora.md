@@ -1,6 +1,7 @@
 ---
 title: "Packaging a Rust Program for Fedora"
 date: 2024-08-25T00:49:31-06:00
+description: "A step-by-step guide to packaging a Rust binary for Fedora, from rust2rpm and mock builds to finding a sponsor and publishing your package."
 categories: ["fedora", "rust"]
 url: /packaging-rust-program-for-fedora
 ---
