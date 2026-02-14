@@ -2,6 +2,7 @@ baseURL = "https://jrfernandez.com/"
 languageCode = "en-us"
 title = "Jose Fernandez"
 timezone = "America/Denver"
+enableRobotsTXT = true
 
 [params]
   description = "Systems engineer building compute infrastructure and container runtimes. I contribute to the Linux kernel, created bpftop, and work deep in the stack with eBPF and Rust."
@@ -35,8 +36,6 @@ timezone = "America/Denver"
 
 [outputs]
   home = ["HTML", "RSS"]
-
-enableRobotsTXT = true
 
 [build]
   buildFuture = true
