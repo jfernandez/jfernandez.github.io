@@ -3,7 +3,7 @@ title: "bpftop"
 url: /bpftop/
 ---
 
-[bpftop](https://github.com/Netflix/bpftop) is a monitoring tool I created to provide real-time insights into the performance of eBPF programs.
+[bpftop](https://github.com/jfernandez/bpftop) is a monitoring tool I created to provide real-time insights into the performance of eBPF programs.
 
 Read more about it in the [blog post](https://netflixtechblog.com/announcing-bpftop-streamlining-ebpf-performance-optimization-6a727c1ae2e5) on the Netflix Tech Blog.
 
