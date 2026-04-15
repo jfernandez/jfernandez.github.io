@@ -61,8 +61,3 @@ This is how I build software now:
 I use Neovim for quick edits. When I need to change something directly, it needs to be faster than telling AI what to do. Vim motions make that possible, and AI helped me work through the learning curve. Most of my time is spent in the markdown planning doc with AI, watching the design take shape in mdserve's live preview.
 
 Whiteboarding with AI has fundamentally changed my workflow. I spend less time typing code and more time thinking through problems, design, and architecture.
-
-<div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px; margin-top: 20px;">
-  <em><strong>Note:</strong> This blog is kept in source control. If you find any issues with the content, please open an issue
-  <a href="https://github.com/jfernandez/jfernandez.github.io/issues" target="_blank">here</a> or submit <a href="https://github.com/jfernandez/jfernandez.github.io/pulls" target="_blank">PR</a>.</em>
-</div>

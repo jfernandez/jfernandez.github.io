@@ -67,8 +67,3 @@ We're moving toward more modular, specialized development workflows. Instead of 
 mdserve represents this philosophy: a tool that does one thing well and fits naturally into modern workflows where the terminal is your primary interface and AI assistants handle heavy lifting.
 
 Try it out at [github.com/jfernandez/mdserve](https://github.com/jfernandez/mdserve).
-
-<div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px; margin-top: 20px;">
-  <em><strong>Note:</strong> This blog is kept in source control. If you find any issues with the content, please open an issue
-  <a href="https://github.com/jfernandez/jfernandez.github.io/issues" target="_blank">here</a> or submit <a href="https://github.com/jfernandez/jfernandez.github.io/pulls" target="_blank">PR</a>.</em>
-</div>

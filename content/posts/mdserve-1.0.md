@@ -75,8 +75,3 @@ claude plugin add jfernandez/mdserve
 Then just use Claude Code as you normally would. When the agent needs to show you something longer than a few lines, it'll handle the rest.
 
 Try it out at [github.com/jfernandez/mdserve](https://github.com/jfernandez/mdserve).
-
-<div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px; margin-top: 20px;">
-  <em><strong>Note:</strong> This blog is kept in source control. If you find any issues with the content, please open an issue
-  <a href="https://github.com/jfernandez/jfernandez.github.io/issues" target="_blank">here</a> or submit <a href="https://github.com/jfernandez/jfernandez.github.io/pulls" target="_blank">PR</a>.</em>
-</div>

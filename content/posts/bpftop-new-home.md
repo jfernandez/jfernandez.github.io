@@ -33,8 +33,3 @@ If you maintain a bpftop package in a distro, I apologize if this transfer cause
 One area I'm excited about is making bpftop easier to integrate with AI agents. Today it's a human-facing TUI, but eBPF observability data is exactly the kind of structured, real-time system information that agents need to reason about infrastructure. Expect to see more on that soon.
 
 If you run into any issues, please open an issue on the [new repo](https://github.com/jfernandez/bpftop) and I'll help sort it out.
-
-<div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px; margin-top: 20px;">
-  <em><strong>Note:</strong> This blog is kept in source control. If you find any issues with the content, please open an issue
-  <a href="https://github.com/jfernandez/jfernandez.github.io/issues" target="_blank">here</a> or submit <a href="https://github.com/jfernandez/jfernandez.github.io/pulls" target="_blank">PR</a>.</em>
-</div>

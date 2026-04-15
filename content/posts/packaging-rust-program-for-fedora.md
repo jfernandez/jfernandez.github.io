@@ -127,9 +127,3 @@ I found the Fedora packaging process more streamlined than I initially assumed. 
 - [Fedora Hyperkitty](https://lists.fedoraproject.org/archives/): The mailing list service where you can communicate with the Fedora community.
 
 These services, when used together, make the Fedora packaging process much more approachable. I hope this guide makes your experience smoother and easier to navigate!
-
-<div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px; margin-top: 20px;">
-  <em><strong>Note:</strong> This blog is kept in source control. If you find any issues with the content, please open an issue
-  <a href="https://github.com/jfernandez/jfernandez.github.io/issues" target="_blank">here</a> or submit <a href="https://github.com/jfernandez/jfernandez.github.io/pulls" target="_blank">PR</a>.</em>
-
-</div>
