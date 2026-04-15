@@ -5,7 +5,7 @@ timezone = "America/Denver"
 enableRobotsTXT = true
 
 [params]
-  description = "Systems engineer building compute infrastructure and container runtimes. I contribute to the Linux kernel, created bpftop, and work deep in the stack with eBPF and Rust."
+  description = "Systems engineer at Anthropic. I contribute to the Linux kernel, created bpftop, and work deep in the stack with eBPF and Rust."
   email = "me@jrfernandez.com"
   github = "jfernandez"
   twitter = "jrfernandez"
